@@ -69,4 +69,21 @@ class UserAuthController extends Controller
         }else return $res="Incorrect Password.";
     }
 
+    public function updateProfile($id, Request $request) {
+
+        $user = User::find($id);
+
+        $user->profile = $request -> input('profile');
+        $user->save();
+
+    }
+
+    public function getProfile($id) {
+
+        $user = User::find($id);
+
+        return response(['user'=> $user]);
+
+    }
+
 }

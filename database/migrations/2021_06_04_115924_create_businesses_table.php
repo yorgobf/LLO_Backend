@@ -21,10 +21,12 @@ class CreateBusinessesTable extends Migration
                 $table->string('hostname',100);
                 $table->string('category',100);//done
                 $table->string('location',100);//done
-                $table->string('location_coordinate',250);//done
+                $table->string('location_coordinate',350);//done
                 $table->integer('price_adults');//done
                 $table->integer('price_kids');//done
                 $table->string('description',1000);//done
+                $table->string('photo_url',500);
+                $table->string('phone_num',500);
                 $table->boolean('wifi');
                 $table->boolean('toilets');
                 $table->boolean('water');

@@ -40,6 +40,8 @@ class BusinessController extends Controller
         $business->hostname = $request->input('hostname');
         $business->category = $request->input('category');
         $business->location = $request->input('location');
+        $business->phone_num = $request->input('phone_num');
+        $business->photo_url = $request->input('photo');
         $business->location_coordinate = $request->input('location_coordinate');
         $business->price_adults = $request->input('price_adults');
         $business->price_kids = $request->input('price_kids');
