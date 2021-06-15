@@ -35,27 +35,25 @@ class BusinessController extends Controller
     {
         $business = new Business;
 
-        $business->name = $request->input('name');
-        $business->hosted_by = $request->input('hosted_by');
-        $business->hostname = $request->input('hostname');
-        $business->category = $request->input('category');
-        $business->location = $request->input('location');
-        $business->phone_num = $request->input('phone_num');
-        $business->photo_url = $request->input('photo');
-        $business->location_coordinate = $request->input('location_coordinate');
-        $business->price_adults = $request->input('price_adults');
-        $business->price_kids = $request->input('price_kids');
-        $business->description = $request->input('description');
-        $business->lessons = $request->input('lessons');
-        $business->wifi = $request->input('wifi');
-        $business->toilets = $request->input('toilets');
-        $business->water = $request->input('water');
-        $business->parking = $request->input('parking');
-        $business->fire = $request->input('fire');
-        $business->shower = $request->input('shower');
-        $business->lessons = $request->input('lessons');
-        $business->location_coordinate = $request->input('location_coordinate');
-        $business->lessons_details = $request->input('lessons_details');
+        $business->name = $request->input('name');//done
+        $business->hosted_by = $request->input('hosted_by');//done
+        $business->hostname = $request->input('hostname');//done
+        $business->category = $request->input('category');//done
+        $business->location = $request->input('location');//done
+        $business->phone_num = $request->input('phone_num');//done
+        $business->photo_url = $request->input('photo_url');//done
+        $business->price_adults = $request->input('price_adults');//done
+        $business->price_kids = $request->input('price_kids');//done
+        $business->description = $request->input('description');//done
+        $business->wifi = $request->input('wifi');//done
+        $business->toilets = $request->input('toilets');//done
+        $business->water = $request->input('water');//done
+        $business->parking = $request->input('parking');//done
+        $business->fire = $request->input('fire');//done
+        $business->shower = $request->input('shower');//done
+        $business->lessons = $request->input('lessons');//done
+        $business->location_coordinate = $request->input('location_coordinate');//done
+        $business->lessons_details = $request->input('lessons_details');//done
 
         $business->save();
 

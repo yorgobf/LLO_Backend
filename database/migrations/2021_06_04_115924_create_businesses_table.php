@@ -26,7 +26,7 @@ class CreateBusinessesTable extends Migration
                 $table->integer('price_kids');//done
                 $table->string('description',1000);//done
                 $table->string('photo_url',500);
-                $table->string('phone_num',500);
+                $table->string('phone_num',20);
                 $table->boolean('wifi');
                 $table->boolean('toilets');
                 $table->boolean('water');
