@@ -66,9 +66,11 @@ class BusinessController extends Controller
      * @param  \App\Models\Business  $business
      * @return \Illuminate\Http\Response
      */
-    public function show(Business $business)
+    public function getBusinessByOwner($userid)
     {
-        //
+        $business = Business::where('hosted_by' , $userid)->get();
+
+        return $business ;
     }
 
     /**
@@ -93,10 +95,10 @@ class BusinessController extends Controller
      * @param  \App\Models\Business  $business
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Business $business)
+    public function destroy($id)
     {
-        $business->delete();
+        $business = Business::find($id)->delete();
 
-        return response(['message' => 'Employee deleted']);
+        return response(['message' => 'Business deleted']);
     }
 }

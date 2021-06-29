@@ -86,4 +86,12 @@ class UserAuthController extends Controller
 
     }
 
+    public function getUser($username) {
+
+        $user = User::where('name' , $username) ->first();
+
+        echo $user;
+
+    }
+
 }
